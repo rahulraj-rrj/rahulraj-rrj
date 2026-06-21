@@ -19,7 +19,7 @@
 <!-- Floating Rotating Dotted Globe (Runs natively on GitHub!) -->
 <img src="./globe.svg" align="right" width="220" style="margin-left: 20px;" alt="Rotating Dotted Globe" />
 
-## 🚀 About Me
+## 🥂 About Me 🥂
 
 I am a backend-focused Computer Science undergraduate with hands-on experience designing production-pattern REST APIs using **Spring Boot** and **Java**. I focus on building layered, maintainable systems with clean separation of concerns, input validation, and centralized exception handling.
 
