@@ -27,11 +27,11 @@ I am a backend-focused Computer Science undergraduate with hands-on experience d
 about-me:
   name: Rahul Raj
   role: Backend Developer
+  motto: "Winners don't make excuses when the other side plays the game"
   education:
     institution: Galgotias University
     degree: Bachelor of Technology (CSE)
     duration: 2022 - 2026
-    cgpa: 8.6 / 10
   philosophy: |
     Solve hard problems at scale. Don't just write code
     that works, but code that lasts.
