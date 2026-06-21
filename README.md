@@ -5,11 +5,19 @@
 
 <br/>
 
+<!-- 
+  Animated Rotating Dotted Globe (Runs natively on GitHub!) 
+  Floats to the right of the About Me section
+-->
+<img src="./globe.svg" align="right" width="250" style="margin-left: 20px;" alt="Rotating Dotted Globe" />
+
 ## 🚀 About Me
 I am a backend-focused Computer Science undergraduate with hands-on experience designing production-pattern REST APIs using **Spring Boot** and **Java**. I focus on building layered, maintainable systems with clean separation of concerns, input validation, and centralized exception handling.
 
 *   🎓 **Education:** Bachelor of Technology in Computer Science Engineering at **Galgotias University** (2022 — 2026) | CGPA: **8.6/10**
 *   ⚡ **Engineering Philosophy:** Solve hard problems at scale — don't just write code that works, but code that lasts. I'm comfortable across the full stack (MERN) but excel at backend architecture and database modeling.
+
+<br clear="right"/>
 
 ---
 
