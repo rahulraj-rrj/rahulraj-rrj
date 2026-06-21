@@ -1,76 +1,83 @@
-<div align="center">
-  <!-- Animated Custom Banner -->
-  <img src="./banner.svg" width="100%" alt="Rahul Raj - Spring Boot & Java Specialist" />
-</div>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=10,13,30&height=150&section=header&text=Rahul%20Raj&fontSize=45&animation=fadeIn" width="100%" alt="Rahul Raj Banner" />
+</p>
+<h3 align="center">Backend Developer | Java & Spring Boot Specialist</h3>
+<p align="center">
+  <a href="mailto:rahulraj.rrj.official@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-1e293b?style=for-the-badge&logo=gmail&logoColor=ea4335" alt="Gmail" />
+  </a>&nbsp;&nbsp;
+  <a href="https://github.com/rahulraj-rrj">
+    <img src="https://img.shields.io/badge/GitHub-1e293b?style=for-the-badge&logo=github&logoColor=ffffff" alt="GitHub" />
+  </a>&nbsp;&nbsp;
+  <a href="https://linkedin.com">
+    <img src="https://img.shields.io/badge/LinkedIn-1e293b?style=for-the-badge&logo=linkedin&logoColor=0a66c2" alt="LinkedIn" />
+  </a>
+</p>
 
 <br/>
 
-<!-- 
-  Animated Rotating Dotted Globe (Runs natively on GitHub!) 
-  Floats to the right of the About Me section
--->
-<img src="./globe.svg" align="right" width="250" style="margin-left: 20px;" alt="Rotating Dotted Globe" />
+<!-- Floating Rotating Dotted Globe (Runs natively on GitHub!) -->
+<img src="./globe.svg" align="right" width="220" style="margin-left: 20px;" alt="Rotating Dotted Globe" />
 
 ## 🚀 About Me
+
 I am a backend-focused Computer Science undergraduate with hands-on experience designing production-pattern REST APIs using **Spring Boot** and **Java**. I focus on building layered, maintainable systems with clean separation of concerns, input validation, and centralized exception handling.
 
-*   🎓 **Education:** Bachelor of Technology in Computer Science Engineering at **Galgotias University** (2022 — 2026) | CGPA: **8.6/10**
-*   ⚡ **Engineering Philosophy:** Solve hard problems at scale — don't just write code that works, but code that lasts. I'm comfortable across the full stack (MERN) but excel at backend architecture and database modeling.
+```yaml
+about-me:
+  name: Rahul Raj
+  role: Backend Developer
+  education:
+    institution: Galgotias University
+    degree: Bachelor of Technology (CSE)
+    duration: 2022 - 2026
+    cgpa: 8.6 / 10
+  philosophy: |
+    Solve hard problems at scale. Don't just write code
+    that works, but code that lasts.
+  focus-areas:
+    - Production-pattern REST APIs
+    - Layered Enterprise Architectures
+    - Database Modeling & Optimization
+    - Core Backend Systems (Java & Spring Boot)
+```
 
 <br clear="right"/>
 
 <p align="center"><img src="./divider.svg" alt="divider" width="100%" /></p>
 
-## ⚡ Connect with Me
-<p align="left">
-  <a href="mailto:rahulraj.rrj.official@gmail.com">
-    <img src="https://img.shields.io/badge/Email-rahulraj.rrj.official%40gmail.com-1e293b?style=for-the-badge&logo=gmail&logoColor=06b6d4" alt="Email" />
-  </a>
-  <a href="https://github.com/rahulraj-rrj">
-    <img src="https://img.shields.io/badge/GitHub-rahulraj--rrj-1e293b?style=for-the-badge&logo=github&logoColor=6366f1" alt="GitHub Profile" />
-  </a>
-  <a href="https://linkedin.com">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-1e293b?style=for-the-badge&logo=linkedin&logoColor=06b6d4" alt="LinkedIn" />
-  </a>
-</p>
-
-<p align="center"><img src="./divider.svg" alt="divider" width="100%" /></p>
-
 ## 🛠️ Technical Toolbox
 
-I maintain a clean, organized workspace. My badges are styled with a uniform dark slate background to prevent visual clutter while preserving brand colors:
+I maintain a clean, organized workspace. I prefer minimal and crisp design choices over cluttered data. Here are the tools and technologies I work with:
 
-### ☕ Programming Languages
+### ☕ Languages
 <p align="left">
-  <img src="https://img.shields.io/badge/Java-1e293b?style=for-the-badge&logo=openjdk&logoColor=F89820" alt="Java" />
-  <img src="https://img.shields.io/badge/JavaScript-1e293b?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/HTML5-1e293b?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1e293b?style=for-the-badge&logo=css3&logoColor=1572B6" alt="CSS3" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="45" height="45" />
 </p>
 
-### ⚙️ Backend &amp; Architecture
+### ⚙️ Backend & Frameworks
 <p align="left">
-  <img src="https://img.shields.io/badge/Spring_Boot-1e293b?style=for-the-badge&logo=springboot&logoColor=6DB33F" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/Node.js-1e293b?style=for-the-badge&logo=nodedotjs&logoColor=339933" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express.js-1e293b?style=for-the-badge&logo=express&logoColor=ffffff" alt="Express.js" />
-  <img src="https://img.shields.io/badge/REST_API-1e293b?style=for-the-badge&logo=api&logoColor=06b6d4" alt="REST API" />
-  <img src="https://img.shields.io/badge/JPA%20/%20Hibernate-1e293b?style=for-the-badge&logo=hibernate&logoColor=59666C" alt="JPA/Hibernate" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt="Hibernate / JPA" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" width="45" height="45" />
 </p>
 
-### 💾 Databases &amp; Storage
+### 💾 Databases & Storage
 <p align="left">
-  <img src="https://img.shields.io/badge/MySQL-1e293b?style=for-the-badge&logo=mysql&logoColor=4479A1" alt="MySQL" />
-  <img src="https://img.shields.io/badge/MongoDB-1e293b?style=for-the-badge&logo=mongodb&logoColor=47A248" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Mongoose-1e293b?style=for-the-badge&logo=mongoose&logoColor=880000" alt="Mongoose ODM" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB & Mongoose" width="45" height="45" />
 </p>
 
-### 🔧 Tools &amp; Environment
+### 🔧 Tools & Environment
 <p align="left">
-  <img src="https://img.shields.io/badge/Git-1e293b?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-1e293b?style=for-the-badge&logo=github&logoColor=ffffff" alt="GitHub" />
-  <img src="https://img.shields.io/badge/Postman-1e293b?style=for-the-badge&logo=postman&logoColor=FF6C37" alt="Postman" />
-  <img src="https://img.shields.io/badge/VS_Code-1e293b?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC" alt="VS Code" />
-  <img src="https://img.shields.io/badge/Vite-1e293b?style=for-the-badge&logo=vite&logoColor=646CFF" alt="Vite" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="45" height="45" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" alt="Vite" width="45" height="45" />
 </p>
 
 <p align="center"><img src="./divider.svg" alt="divider" width="100%" /></p>
@@ -99,12 +106,13 @@ Here is a look at the production patterns I implement in my personal projects:
 ## 📊 GitHub Analytics
 
 ### 🐍 Contribution Grid Snake
+These graphs update dynamically to show my coding contributions:
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./github-snake-dark.svg">
   <img alt="GitHub Contribution Grid Snake" src="./github-snake.svg" width="100%">
 </picture>
 
-### Unified Performance Cards
+### 📈 Performance Cards
 These stats update dynamically based on my GitHub activity and are themed to match my profile's neon-indigo/cyan dark mode:
 
 <p align="center">
@@ -117,13 +125,12 @@ These stats update dynamically based on my GitHub activity and are themed to mat
 </p>
 
 ### 🚀 Dynamic GitHub Metrics (Lowlighter Metrics)
-Once setup, this section displays deep visualizations from the `lowlighter/metrics` GitHub Action, including achievements and advanced coding stats.
-
-<!-- 
-  NOTE: This image references the svg generated by your GitHub Actions workflow.
-  It will show up as a broken link until you complete the quick setup guide below!
--->
 <div align="center">
   <img src="./github-metrics.svg" width="100%" alt="Rahul Raj's Detailed Infographic Metrics" />
 </div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=10,13,30&height=100&section=footer" width="100%" alt="Footer Waving Banner" />
+</p>
+
 
