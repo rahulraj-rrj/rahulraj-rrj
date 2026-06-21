@@ -79,26 +79,29 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
 
-          # Detailed Achievements Plugin
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_secrets: yes
+          # Achievements Plugin (Disabled to avoid GraphQL errors)
+          plugin_achievements: no
 
           # Isometric Commit Calendar (3D Grid)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-          # Coding Habits and Activity Charts
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_charts: yes
-          plugin_habits_trim: yes
+          # Coding Habits (Disabled to avoid private repo API errors)
+          plugin_habits: no
 
-          # Notable Contributions (Badges for repos you contributed to)
-          plugin_notable: yes
-          plugin_notable_from: all
-          plugin_notable_types: commit
+          # Notable Contributions (Disabled since no matching filters were found)
+          plugin_notable: no
+
+          # People Plugin (Display followers/following avatars)
+          plugin_people: yes
+          plugin_people_types: followers, following
+          plugin_people_limit: 24
+          plugin_people_size: 28
+
+          # Starred Topics Plugin (Display topics/interests)
+          plugin_topics: yes
+          plugin_topics_limit: 12
+          plugin_topics_mode: icons
 
           # Lines of code Plugin
           plugin_lines: yes
