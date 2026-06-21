@@ -45,14 +45,8 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
 
-          # Achievements Plugin
-          # We ignore 'manager' and 'member' to prevent crashes caused by GitHub's deprecated Projects (Classic) API
-          plugin_achievements: yes
-          plugin_achievements_only: polyglot, stargazer, developer, explorer
-          plugin_achievements_ignored: manager, member
-          plugin_achievements_limit: 5
-          plugin_achievements_display: compact
-          plugin_achievements_secrets: no
+          # Achievements Plugin (Disabled due to GitHub API changes in Projects Classic)
+          plugin_achievements: no
 
           # Lines of code Plugin
           plugin_lines: yes

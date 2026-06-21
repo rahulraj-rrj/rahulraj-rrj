@@ -121,34 +121,3 @@ Once setup, this section displays deep visualizations from the `lowlighter/metri
   <img src="./github-metrics.svg" width="100%" alt="Rahul Raj's Detailed Infographic Metrics" />
 </div>
 
-<br/>
-
-<details>
-  <summary><b>🛠️ Click to Expand: Quick Setup Guide for lowlighter/metrics</b></summary>
-  
-  To activate the advanced **lowlighter/metrics** infographic card (`github-metrics.svg`):
-  
-  1. **Generate a Personal Access Token (PAT):**
-     - Go to your GitHub account settings **Settings -> Developer Settings -> Personal Access Tokens -> Tokens (classic)**.
-     - Click **Generate new token**.
-     - Give it a description like `GitHub Metrics Token`.
-     - Select the following scopes:
-       - `repo` (all scopes)
-       - `read:org`
-       - `read:user`
-     - Click **Generate token** and copy it immediately.
-  
-  2. **Add the Token to Repository Secrets:**
-     - Go to your special profile repository settings (`rahulraj-rrj/rahulraj-rrj`).
-     - Navigate to **Settings -> Secrets and variables -> Actions**.
-     - Click **New repository secret**.
-     - Name it `METRICS_TOKEN`.
-     - Paste your copied token into the value box and save.
-  
-  3. **Run the Action:**
-     - Go to the **Actions** tab of your repository.
-     - Click on **Generate GitHub Metrics** in the left sidebar.
-     - Click the **Run workflow** dropdown and select the main branch, then click **Run workflow**.
-     - Once it completes (takes ~1-2 minutes), it will generate and commit a new file `github-metrics.svg` into your repository.
-     - The README will automatically load and display your metrics.
-</details>
