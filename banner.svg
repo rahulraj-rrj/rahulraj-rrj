@@ -2,217 +2,225 @@
   <defs>
     <!-- Background Gradients -->
     <radialGradient id="aurora-indigo" cx="20%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#0b0f19" stop-opacity="0" />
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#070a13" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="aurora-cyan" cx="80%" cy="70%" r="50%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#0b0f19" stop-opacity="0" />
+    <radialGradient id="aurora-cyan" cx="80%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#070a13" stop-opacity="0" />
     </radialGradient>
-    
-    <!-- Box & Border Gradients -->
-    <linearGradient id="grad-controller" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.05" />
+
+    <!-- Glowing Lines Gradients -->
+    <linearGradient id="horizon-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0" />
+      <stop offset="20%" stop-color="#6366f1" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="1" />
+      <stop offset="80%" stop-color="#6366f1" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="grad-service" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#4338ca" stop-opacity="0.05" />
+
+    <linearGradient id="grid-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.05" />
+      <stop offset="40%" stop-color="#06b6d4" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.8" />
     </linearGradient>
-    <linearGradient id="grad-database" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.05" />
-    </linearGradient>
-    
-    <linearGradient id="border-controller" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.1" />
-    </linearGradient>
-    <linearGradient id="border-service" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#4338ca" stop-opacity="0.1" />
-    </linearGradient>
-    <linearGradient id="border-database" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.1" />
-    </linearGradient>
-    
-    <!-- Text Gradients -->
+
     <linearGradient id="grad-name" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#a5b4fc" />
     </linearGradient>
-    <linearGradient id="grad-accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#6366f1" />
-    </linearGradient>
-    
-    <!-- Grid Pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.4" />
-    </pattern>
 
-    <!-- Glowing Filters -->
-    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <!-- Clip Path for 3D Perspective Grid (Trapezoid shape) -->
+    <clipPath id="grid-clip">
+      <polygon points="200,160 650,160 850,280 0,280" />
+    </clipPath>
+
+    <!-- Glowing Filter -->
+    <filter id="glow-cyan" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
-    <filter id="glow-indigo" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
-    <style>
-      .bg { fill: #0d1117; }
-      .text-welcome {
-        font-family: 'Courier New', monospace;
-        font-size: 13px;
-        fill: #6366f1;
-        font-weight: bold;
-        letter-spacing: 0.1em;
-      }
-      .text-name {
-        font-family: 'Inter', system-ui, -apple-system, sans-serif;
-        font-size: 44px;
-        font-weight: 800;
-        fill: url(#grad-name);
-        letter-spacing: -0.02em;
-      }
-      .text-tagline {
-        font-family: 'Space Grotesk', system-ui, sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        fill: #38bdf8;
-      }
-      .text-subtagline {
-        font-family: 'Space Grotesk', system-ui, sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        fill: #94a3b8;
-      }
-      
-      /* Diagram Styles */
-      .diag-text {
-        font-family: 'Courier New', monospace;
-        font-size: 11px;
-        fill: #e2e8f0;
-        text-anchor: middle;
-        font-weight: bold;
-      }
-      .diag-subtext {
-        font-family: sans-serif;
-        font-size: 8px;
-        fill: #64748b;
-        text-anchor: middle;
-      }
-      .conn-line {
-        stroke: #334155;
-        stroke-width: 1.5;
-        fill: none;
-      }
-      .conn-line-active {
-        stroke: url(#grad-accent);
-        stroke-width: 1.5;
-        stroke-dasharray: 6 4;
-        animation: flow 20s linear infinite;
-      }
-      .diag-arrow {
-        fill: #6366f1;
-      }
-      
-      @keyframes flow {
-        to { stroke-dashoffset: -1000; }
-      }
-      
-      .pulse-node {
-        animation: blink 2s ease-in-out infinite alternate;
-      }
-      @keyframes blink {
-        0% { opacity: 0.4; }
-        100% { opacity: 1; }
-      }
-    </style>
   </defs>
+
+  <style>
+    .bg { fill: #070a13; }
+    
+    /* Text styles */
+    .text-welcome {
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      fill: #6366f1;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+    }
+    .text-name {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 44px;
+      font-weight: 800;
+      fill: url(#grad-name);
+      letter-spacing: -0.02em;
+    }
+    .text-tagline {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      fill: #38bdf8;
+    }
+    .text-subtagline {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      font-size: 13px;
+      fill: #94a3b8;
+    }
+
+    /* 3D Grid styles */
+    .grid-v {
+      stroke: #1e293b;
+      stroke-width: 1;
+      stroke-opacity: 0.5;
+    }
+    .grid-h {
+      stroke: url(#grid-fade);
+      stroke-width: 1.5;
+    }
+    .horizon-line {
+      stroke: url(#horizon-grad);
+      stroke-width: 2;
+      filter: url(#glow-cyan);
+    }
+
+    /* 3D Globe styles */
+    .globe-el {
+      fill: none;
+      stroke: #06b6d4;
+      stroke-width: 1.2;
+      stroke-opacity: 0.8;
+    }
+    .globe-el-indigo {
+      fill: none;
+      stroke: #6366f1;
+      stroke-width: 1;
+      stroke-opacity: 0.6;
+    }
+    .globe-outline {
+      fill: none;
+      stroke: #1e293b;
+      stroke-width: 1.5;
+    }
+    
+    .pulse-node {
+      animation: blink 2s ease-in-out infinite alternate;
+    }
+    @keyframes blink {
+      0% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+  </style>
 
   <!-- Background Base -->
   <rect width="100%" height="100%" class="bg" />
 
-  <!-- Glowing Auroras -->
-  <circle cx="100" cy="50" r="250" fill="url(#aurora-indigo)" />
-  <circle cx="700" cy="200" r="220" fill="url(#aurora-cyan)" />
+  <!-- Auroras -->
+  <circle cx="150" cy="80" r="280" fill="url(#aurora-indigo)" />
+  <circle cx="680" cy="120" r="250" fill="url(#aurora-cyan)" />
 
-  <!-- Grid Overlay -->
-  <rect width="100%" height="100%" fill="url(#grid)" />
+  <!-- 3D PERSPECTIVE GRID (Lower Half) -->
+  <g clip-path="url(#grid-clip)" opacity="0.6">
+    <!-- Vertical Perspective Lines converging to center (425, 150) -->
+    <line x1="425" y1="150" x2="-200" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="-50" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="100" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="250" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="350" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="425" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="500" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="600" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="750" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="900" y2="280" class="grid-v" />
+    <line x1="425" y1="150" x2="1050" y2="280" class="grid-v" />
 
-  <!-- LEFT SIDE: Professional Branding -->
-  <g transform="translate(50, 0)">
-    <!-- Code line Welcome -->
-    <text x="0" y="65" class="text-welcome">public class Developer {</text>
+    <!-- Animated Horizontal Lines moving forward with perspective acceleration -->
+    <line x1="0" y1="160" x2="850" y2="160" class="grid-h">
+      <animate attributeName="y1" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="0s" />
+      <animate attributeName="y2" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="0s" />
+    </line>
+    <line x1="0" y1="160" x2="850" y2="160" class="grid-h">
+      <animate attributeName="y1" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="y2" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="0.5s" />
+    </line>
+    <line x1="0" y1="160" x2="850" y2="160" class="grid-h">
+      <animate attributeName="y1" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="y2" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="1s" />
+    </line>
+    <line x1="0" y1="160" x2="850" y2="160" class="grid-h">
+      <animate attributeName="y1" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="1.5s" />
+      <animate attributeName="y2" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="1.5s" />
+    </line>
+    <line x1="0" y1="160" x2="850" y2="160" class="grid-h">
+      <animate attributeName="y1" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="2s" />
+      <animate attributeName="y2" values="160;165;175;195;225;280" dur="2.5s" repeatCount="indefinite" begin="2s" />
+    </line>
+  </g>
+
+  <!-- Glowing Horizon Line -->
+  <line x1="0" y1="160" x2="850" y2="160" class="horizon-line" />
+
+  <!-- LEFT SIDE: Branding / Introduction -->
+  <g transform="translate(60, 0)">
+    <!-- Hello World -->
+    <text x="0" y="55" class="text-welcome">public class BackendDeveloper {</text>
     
-    <!-- Large Name -->
-    <text x="0" y="115" class="text-name">Rahul Raj</text>
+    <!-- Name -->
+    <text x="0" y="105" class="text-name">Rahul Raj</text>
 
-    <!-- Professional Static Taglines (100% Reliable Rendering) -->
-    <text x="0" y="155" class="text-tagline">Spring Boot &amp; Java Developer</text>
-    <text x="0" y="180" class="text-subtagline">Building layered, maintainable, and scalable backends</text>
+    <!-- Professional taglines -->
+    <text x="0" y="145" class="text-tagline">Spring Boot &amp; Java Specialist</text>
+    <text x="0" y="172" class="text-subtagline">Architecting robust, layered, and maintainable systems</text>
+    
+    <text x="0" y="200" class="text-welcome" fill="#334155">}</text>
 
-    <text x="0" y="210" class="text-welcome" fill="#475569">}</text>
-
-    <!-- Available for Work Status Badge -->
-    <g transform="translate(0, 230)">
+    <!-- Available badge -->
+    <g transform="translate(0, 222)">
       <rect width="165" height="24" rx="12" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.8" />
       <circle cx="15" cy="12" r="3.5" fill="#10b981" class="pulse-node" />
       <text x="26" y="16" fill="#10b981" font-family="'Courier New', monospace" font-size="10" font-weight="bold">ACTIVE &amp; OPEN TO WORK</text>
     </g>
   </g>
 
-  <!-- RIGHT SIDE: Architecture Pipeline (Controller -> Service -> Repo -> DB) -->
-  <g transform="translate(480, 0)">
-    <!-- Connection Paths -->
-    <path d="M 60,65 L 120,135" class="conn-line" />
-    <path d="M 60,65 L 120,135" class="conn-line-active" />
+  <!-- RIGHT SIDE: Rotating 3D Wireframe Globe -->
+  <g transform="translate(650, 100)">
+    <!-- Globe Backdrop glow -->
+    <circle cx="0" cy="0" r="65" fill="#06b6d4" fill-opacity="0.03" filter="url(#glow-cyan)" />
     
-    <path d="M 120,135 L 180,205" class="conn-line" />
-    <path d="M 120,135 L 180,205" class="conn-line-active" />
+    <!-- Latitudes (Horizontal lines) -->
+    <ellipse cx="0" cy="0" rx="63" ry="18" class="globe-el-indigo" />
+    <ellipse cx="0" cy="0" rx="55" ry="38" class="globe-el-indigo" />
+    <ellipse cx="0" cy="0" rx="35" ry="54" class="globe-el-indigo" />
+    <line x1="-65" y1="0" x2="65" y2="0" class="globe-el-indigo" />
+
+    <!-- Longitudes (Rotating ellipses) -->
+    <!-- Ellipse 1 (Full 3D cycle) -->
+    <ellipse cx="0" cy="0" rx="65" ry="65" class="globe-el">
+      <animate attributeName="rx" values="65;45;15;0;15;45;65" dur="10s" repeatCount="indefinite" />
+    </ellipse>
+    <!-- Ellipse 2 (Phased 3D cycle) -->
+    <ellipse cx="0" cy="0" rx="35" ry="65" class="globe-el">
+      <animate attributeName="rx" values="35;0;35;65;35" dur="10s" repeatCount="indefinite" />
+    </ellipse>
+    <!-- Ellipse 3 (Phased 3D cycle) -->
+    <ellipse cx="0" cy="0" rx="10" ry="65" class="globe-el">
+      <animate attributeName="rx" values="10;45;65;45;10;0;10" dur="10s" repeatCount="indefinite" />
+    </ellipse>
     
-    <path d="M 180,205 L 250,205" class="conn-line" />
+    <!-- Central axis -->
+    <line x1="0" y1="-65" x2="0" y2="65" class="globe-el-indigo" />
+
+    <!-- Globe Boundary -->
+    <circle cx="0" cy="0" r="65" class="globe-outline" stroke="#334155" />
+    <circle cx="0" cy="0" r="65" class="globe-outline" stroke="#06b6d4" stroke-opacity="0.4" filter="url(#glow-cyan)" />
     
-    <!-- Step 1: Controller Card -->
-    <g transform="translate(10, 40)">
-      <rect width="100" height="42" rx="6" fill="url(#grad-controller)" stroke="url(#border-controller)" stroke-width="1.2" />
-      <text x="50" y="21" class="diag-text">Controller</text>
-      <text x="50" y="32" class="diag-subtext">REST Endpoints</text>
-      <circle cx="100" cy="21" r="3" fill="#3b82f6" />
-    </g>
-
-    <!-- Step 2: Service Card -->
-    <g transform="translate(70, 110)">
-      <rect width="100" height="42" rx="6" fill="url(#grad-service)" stroke="url(#border-service)" stroke-width="1.2" />
-      <text x="50" y="21" class="diag-text">Service</text>
-      <text x="50" y="32" class="diag-subtext">Business Logic</text>
-      <circle cx="0" cy="21" r="3" fill="#6366f1" />
-      <circle cx="100" cy="21" r="3" fill="#6366f1" />
-    </g>
-
-    <!-- Step 3: Repository Card -->
-    <g transform="translate(130, 180)">
-      <rect width="100" height="42" rx="6" fill="url(#grad-database)" stroke="url(#border-database)" stroke-width="1.2" />
-      <text x="50" y="21" class="diag-text">Repository</text>
-      <text x="50" y="32" class="diag-subtext">JPA / Hibernate</text>
-      <circle cx="0" cy="21" r="3" fill="#06b6d4" />
-      <circle cx="100" cy="21" r="3" fill="#06b6d4" />
-    </g>
-
-    <!-- Step 4: MySQL Database Cylinders (Abstract) -->
-    <g transform="translate(250, 178)">
-      <path d="M 0,10 A 15,6 0 0,0 30,10 A 15,6 0 0,0 0,10 M 0,10 L 0,34 A 15,6 0 0,0 30,34 L 30,10" fill="#0f172a" fill-opacity="0.8" stroke="#475569" stroke-width="1.2" />
-      <path d="M 0,18 A 15,6 0 0,0 30,18" fill="none" stroke="#475569" stroke-width="1.2" />
-      <path d="M 0,26 A 15,6 0 0,0 30,26" fill="none" stroke="#475569" stroke-width="1.2" />
-      <text x="15" y="44" class="diag-subtext">MySQL</text>
-    </g>
-
-    <!-- Connector Flow Labels -->
-    <text x="65" y="100" fill="#64748b" font-family="monospace" font-size="8" transform="rotate(45, 65, 100)">DTO</text>
-    <text x="130" y="170" fill="#64748b" font-family="monospace" font-size="8" transform="rotate(45, 130, 170)">Entity</text>
+    <!-- Rotating node particle on the equator -->
+    <circle cx="0" cy="0" r="3" fill="#ffffff" class="pulse-node">
+      <animateMotion path="M -65,0 A 65,18 0 1,0 65,0 A 65,18 0 1,0 -65,0" dur="5s" repeatCount="indefinite" />
+    </circle>
   </g>
 </svg>

@@ -1,19 +1,53 @@
-# GitHub Metrics Workflow
-# Powered by lowlighter/metrics - https://github.com/lowlighter/metrics
+# GitHub Metrics & Snake Workflow
+# Powered by lowlighter/metrics & platane/snk
 
-name: Generate GitHub Metrics
+name: Generate GitHub Assets
 
 on:
+  # Schedule daily updates at midnight UTC (05:30 AM IST)
   schedule:
     - cron: "0 0 * * *"
+  # Allow manual triggering from the Actions tab
   workflow_dispatch:
+  # Run on push to main/master
   push:
     branches:
       - main
       - master
 
 jobs:
+  # Job 1: Generate the animated contribution snake game
+  generate-snake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Generates the snake SVGs based on your contribution board
+      - name: Generate Snake SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: rahulraj-rrj
+          outputs: |
+            github-snake.svg
+            github-snake-dark.svg?palette=github-dark
+
+      # Commits the generated snake SVGs back to the main branch
+      - name: Commit and Push Snake
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add github-snake.svg github-snake-dark.svg
+          git commit -m "Update contribution snake animation" || echo "No changes"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Job 2: Generate the profile infographic metrics (runs after snake finishes)
   github-metrics:
+    needs: generate-snake
     runs-on: ubuntu-latest
     permissions:
       contents: write

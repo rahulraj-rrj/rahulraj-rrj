@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 20" width="100%" height="100%">
+  <defs>
+    <!-- Glowing Line Gradient -->
+    <linearGradient id="divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0" />
+      <stop offset="15%" stop-color="#6366f1" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="1" />
+      <stop offset="85%" stop-color="#6366f1" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glowing Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .line {
+      stroke: url(#divider-grad);
+      stroke-width: 1.5;
+    }
+    .node {
+      fill: #06b6d4;
+      filter: url(#glow);
+      animation: pulse 2s ease-in-out infinite alternate;
+    }
+    @keyframes pulse {
+      0% {
+        r: 3px;
+        opacity: 0.6;
+      }
+      100% {
+        r: 5px;
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <!-- Horizontal Divider Line -->
+  <line x1="0" y1="10" x2="800" y2="10" class="line" />
+
+  <!-- Glowing Center Node -->
+  <circle cx="400" cy="10" r="4" class="node" />
+</svg>

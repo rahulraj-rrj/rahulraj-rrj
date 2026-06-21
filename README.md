@@ -19,7 +19,7 @@ I am a backend-focused Computer Science undergraduate with hands-on experience d
 
 <br clear="right"/>
 
----
+<p align="center"><img src="./divider.svg" alt="divider" width="100%" /></p>
 
 ## ⚡ Connect with Me
 <p align="left">
@@ -34,7 +34,7 @@ I am a backend-focused Computer Science undergraduate with hands-on experience d
   </a>
 </p>
 
----
+<p align="center"><img src="./divider.svg" alt="divider" width="100%" /></p>
 
 ## 🛠️ Technical Toolbox
 
@@ -73,7 +73,7 @@ I maintain a clean, organized workspace. My badges are styled with a uniform dar
   <img src="https://img.shields.io/badge/Vite-1e293b?style=for-the-badge&logo=vite&logoColor=646CFF" alt="Vite" />
 </p>
 
----
+<p align="center"><img src="./divider.svg" alt="divider" width="100%" /></p>
 
 ## 📁 Projects Showroom
 
@@ -94,9 +94,15 @@ Here is a look at the production patterns I implement in my personal projects:
 *   **State Management**: Structured unified state hooks to coordinate real-time CRUD operations seamlessly across all components.
 *   <a href="https://github.com/rahulraj-rrj" target="_blank">🔗 View Repository</a>
 
----
+<p align="center"><img src="./divider.svg" alt="divider" width="100%" /></p>
 
 ## 📊 GitHub Analytics
+
+### 🐍 Contribution Grid Snake
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./github-snake-dark.svg">
+  <img alt="GitHub Contribution Grid Snake" src="./github-snake.svg" width="100%">
+</picture>
 
 ### Unified Performance Cards
 These stats update dynamically based on my GitHub activity and are themed to match my profile's neon-indigo/cyan dark mode:
