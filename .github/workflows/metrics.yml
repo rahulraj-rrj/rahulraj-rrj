@@ -1,0 +1,60 @@
+# GitHub Metrics Workflow
+# Powered by lowlighter/metrics - https://github.com/lowlighter/metrics
+
+name: Generate GitHub Metrics
+
+on:
+  # Schedule daily updates at midnight UTC (05:30 AM IST)
+  schedule:
+    - cron: "0 0 * * *"
+  # Allow manual triggering from the Actions tab
+  workflow_dispatch:
+  # Run on push to main
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Generate Profile Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          # Your GitHub Personal Access Token (stored in Repository Secrets)
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Options
+          user: rahulraj-rrj
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          
+          # Output file name and path
+          filename: github-metrics.svg
+
+          # Languages Plugin
+          plugin_languages: yes
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+
+          # Achievements Plugin
+          plugin_achievements: yes
+          plugin_achievements_only: polyglot, overload, Cloner, active-developer, Pull Request, Commit
+          plugin_achievements_limit: 5
+          plugin_achievements_display: compact
+          plugin_achievements_secrets: yes
+
+          # Lines of code Plugin
+          plugin_lines: yes
+
+          # Follow-up Plugin (PRs/Issues state)
+          plugin_followup: yes
+          plugin_followup_sections: user
