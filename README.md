@@ -401,8 +401,10 @@ alt="Top Languages"/>
 
 # 🔥 Contribution Streak
 
+
 <img
-src="https://streak-stats.demolab.com?user=rahulraj-rrj&theme=radical&hide_border=true&background=1c1030&ring=c24bff&fire=ff9de6&currStreakLabel=ffffff"
+  src="https://streak-stats.demolab.com?user=rahulraj-rrj"
+  alt="GitHub Streak"
 />
 
 </div>
