@@ -67,7 +67,7 @@ alt="Rahul Raj ID Card"/>
 
 <td width="64%" valign="top">
 
-# 🚀 About Me
+#  About Me
 
 Backend-focused **Computer Science Engineer** passionate about designing scalable, production-ready applications.
 
@@ -114,11 +114,11 @@ philosophy:
 
 <div align="center">
 
-# 🚀 Featured Projects
+#  Featured Projects
 
 </div>
 
-| 🚀 Project | ⚙️ Stack | ⭐ Highlights |
+| 🍷 Project | ⚙️ Stack | ⭐ Highlights |
 |:-----------|:---------|:-------------|
 | **[Encore — Event Ticket Booking Platform](https://github.com/rahulraj-rrj/event-booking-platform)** | Spring Boot • React • JWT • Docker • MySQL | Concurrency-safe seat reservation using optimistic locking, JWT authentication, geolocation search, Render deployment |
 | **[ZBlog](https://github.com/rahulraj-rrj/ZBlog)** | Spring Boot • React • MySQL | Modern blogging platform featuring authentication, dashboard, media management and publishing workflow |
@@ -164,7 +164,7 @@ philosophy:
 
 <td align="center" width="25%">
 
-## 🚀 Backend
+## 🍷 Backend
 
 <br/>
 
@@ -184,7 +184,7 @@ philosophy:
 
 <td align="center" width="25%">
 
-## ⚡ DevOps
+## 🍷 DevOps
 
 <br/>
 
@@ -467,7 +467,7 @@ alt="Contribution Snake"/>
 
 <div align="center">
 
-| 📌 Metric | 🚀 Focus |
+| 📌 Metric | 🎯 Focus |
 |:----------|:----------|
 | 💻 Primary Language | Java |
 | ⚙ Backend Framework | Spring Boot |
@@ -492,7 +492,7 @@ alt="Contribution Snake"/>
 
 <td width="50%">
 
-## 🚀 Encore
+## 🔖 Encore
 
 Production-ready ticket booking platform
 
@@ -638,7 +638,7 @@ coding_style:
 
 <td width="50%" valign="top">
 
-## 🚀 Building
+## 👷 Building
 
 - Production-grade Spring Boot applications
 - Secure REST APIs
