@@ -1,0 +1,82 @@
+<svg viewBox="0 0 560 170" width="560" height="170" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="cardBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1c1030"/>
+    <stop offset="100%" stop-color="#2a1245"/>
+  </linearGradient>
+  <linearGradient id="shineGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#ffffff" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="cardClip3"><rect x="0.5" y="0.5" width="559" height="169" rx="16"/></clipPath>
+  <filter id="trophyGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.6"/></filter>
+</defs>
+<g clip-path="url(#cardClip3)">
+  <rect x="0.5" y="0.5" width="559" height="169" rx="16" fill="url(#cardBg3)" stroke="#a45fe0" stroke-opacity="0.45"/>
+  <text x="24" y="28" font-family="Verdana, Arial, sans-serif" font-size="16" font-weight="700" fill="#ff9de6">Trophy Case</text>
+  <g transform="translate(76.0,95) scale(0.3)" opacity="0">
+      <animate attributeName="opacity" begin="0.15s" dur="0.5s" values="0;1" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" begin="0.15s" dur="0.55s"
+        values="0.3;1.12;0.94;1.0" keyTimes="0;0.55;0.8;1" calcMode="spline"
+        keySplines="0.2 0.6 0.3 1;0.3 0 0.6 1;0.3 0 0.6 1" fill="freeze" additive="sum" id="pop0"/>
+      <g transform="scale(3.3)">
+        <rect x="-42" y="-46" width="84" height="92" rx="12" fill="rgba(255,255,255,0.05)" stroke="#cd7f32" stroke-opacity="0.7" stroke-width="1"/>
+        <g filter="url(#trophyGlow)">
+          <path d="M-14,-16 h28 v6 a14,14 0 0 1 -10,13.4 V8 h-8 V3.4 A14,14 0 0 1 -14,-10 Z M-18,-14 h-6 v4 a8,8 0 0 0 6,7.7 Z M18,-14 h6 v4 a8,8 0 0 0 -6,7.7 Z M-9,8 h18 v4 h-18 Z M-12,12 h24 v5 h-24 Z" transform="translate(0,-14) scale(0.85)" fill="#cd7f32"/>
+        </g>
+        <text x="0" y="20" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="9" fill="#e6d3f5">Repositories</text>
+        <text x="0" y="32" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="13" font-weight="800" fill="#ffffff">9</text>
+        <text x="0" y="43" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#cd7f32">BRONZE</text>
+      </g>
+    </g>
+<g transform="translate(212.0,95) scale(0.3)" opacity="0">
+      <animate attributeName="opacity" begin="0.37s" dur="0.5s" values="0;1" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" begin="0.37s" dur="0.55s"
+        values="0.3;1.12;0.94;1.0" keyTimes="0;0.55;0.8;1" calcMode="spline"
+        keySplines="0.2 0.6 0.3 1;0.3 0 0.6 1;0.3 0 0.6 1" fill="freeze" additive="sum" id="pop1"/>
+      <g transform="scale(3.3)">
+        <rect x="-42" y="-46" width="84" height="92" rx="12" fill="rgba(255,255,255,0.05)" stroke="#cd7f32" stroke-opacity="0.7" stroke-width="1"/>
+        <g filter="url(#trophyGlow)">
+          <path d="M-14,-16 h28 v6 a14,14 0 0 1 -10,13.4 V8 h-8 V3.4 A14,14 0 0 1 -14,-10 Z M-18,-14 h-6 v4 a8,8 0 0 0 6,7.7 Z M18,-14 h6 v4 a8,8 0 0 0 -6,7.7 Z M-9,8 h18 v4 h-18 Z M-12,12 h24 v5 h-24 Z" transform="translate(0,-14) scale(0.85)" fill="#cd7f32"/>
+        </g>
+        <text x="0" y="20" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="9" fill="#e6d3f5">Stars Earned</text>
+        <text x="0" y="32" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="13" font-weight="800" fill="#ffffff">1</text>
+        <text x="0" y="43" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#cd7f32">BRONZE</text>
+      </g>
+    </g>
+<g transform="translate(348.0,95) scale(0.3)" opacity="0">
+      <animate attributeName="opacity" begin="0.59s" dur="0.5s" values="0;1" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" begin="0.59s" dur="0.55s"
+        values="0.3;1.12;0.94;1.0" keyTimes="0;0.55;0.8;1" calcMode="spline"
+        keySplines="0.2 0.6 0.3 1;0.3 0 0.6 1;0.3 0 0.6 1" fill="freeze" additive="sum" id="pop2"/>
+      <g transform="scale(3.3)">
+        <rect x="-42" y="-46" width="84" height="92" rx="12" fill="rgba(255,255,255,0.05)" stroke="#8a8f9a" stroke-opacity="0.7" stroke-width="1"/>
+        <g filter="url(#trophyGlow)">
+          <path d="M-14,-16 h28 v6 a14,14 0 0 1 -10,13.4 V8 h-8 V3.4 A14,14 0 0 1 -14,-10 Z M-18,-14 h-6 v4 a8,8 0 0 0 6,7.7 Z M18,-14 h6 v4 a8,8 0 0 0 -6,7.7 Z M-9,8 h18 v4 h-18 Z M-12,12 h24 v5 h-24 Z" transform="translate(0,-14) scale(0.85)" fill="#8a8f9a"/>
+        </g>
+        <text x="0" y="20" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="9" fill="#e6d3f5">Followers</text>
+        <text x="0" y="32" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="13" font-weight="800" fill="#ffffff">0</text>
+        <text x="0" y="43" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#8a8f9a">NEWCOMER</text>
+      </g>
+    </g>
+<g transform="translate(484.0,95) scale(0.3)" opacity="0">
+      <animate attributeName="opacity" begin="0.81s" dur="0.5s" values="0;1" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" begin="0.81s" dur="0.55s"
+        values="0.3;1.12;0.94;1.0" keyTimes="0;0.55;0.8;1" calcMode="spline"
+        keySplines="0.2 0.6 0.3 1;0.3 0 0.6 1;0.3 0 0.6 1" fill="freeze" additive="sum" id="pop3"/>
+      <g transform="scale(3.3)">
+        <rect x="-42" y="-46" width="84" height="92" rx="12" fill="rgba(255,255,255,0.05)" stroke="#ff5fc7" stroke-opacity="0.7" stroke-width="1"/>
+        <g filter="url(#trophyGlow)">
+          <path d="M-14,-16 h28 v6 a14,14 0 0 1 -10,13.4 V8 h-8 V3.4 A14,14 0 0 1 -14,-10 Z M-18,-14 h-6 v4 a8,8 0 0 0 6,7.7 Z M18,-14 h6 v4 a8,8 0 0 0 -6,7.7 Z M-9,8 h18 v4 h-18 Z M-12,12 h24 v5 h-24 Z" transform="translate(0,-14) scale(0.85)" fill="#ff5fc7"/>
+        </g>
+        <text x="0" y="20" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="9" fill="#e6d3f5">Since 2025</text>
+        <text x="0" y="32" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="13" font-weight="800" fill="#ffffff">Rising</text>
+        <text x="0" y="43" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ff5fc7">DEV</text>
+      </g>
+    </g>
+  <rect x="-120" y="0" width="90" height="170" fill="url(#shineGrad2)" transform="skewX(-20)">
+    <animate attributeName="x" begin="1.6s" dur="3s" repeatCount="indefinite" values="-120;600"/>
+  </rect>
+</g>
+</svg>

@@ -1,0 +1,58 @@
+<svg viewBox="0 0 480 195" width="480" height="195" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1c1030"/>
+    <stop offset="100%" stop-color="#2a1245"/>
+  </linearGradient>
+  <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#ff5fc7"/>
+    <stop offset="100%" stop-color="#8a4bff"/>
+  </linearGradient>
+</defs>
+<rect x="0.5" y="0.5" width="479" height="194" rx="16" fill="url(#cardBg)" stroke="#a45fe0" stroke-opacity="0.45"/>
+<text x="24" y="30" font-family="Verdana, Arial, sans-serif" font-size="16" font-weight="700" fill="#ff9de6">Rahul&#8217;s GitHub Stats</text>
+
+<g transform="translate(400,97)">
+  <circle r="58" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="10"/>
+  <circle r="58" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-linecap="round"
+    stroke-dasharray="364.4" stroke-dashoffset="364.4" transform="rotate(-90)">
+    <animate attributeName="stroke-dashoffset" begin="0.3s" dur="1.6s" values="364.4;138.5" calcMode="spline" keySplines="0.2 0.6 0.3 1" fill="freeze"/>
+  </circle>
+  <text x="0" y="-4" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">9</text>
+  <text x="0" y="16" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="10" fill="#c9a6ff">REPOS</text>
+</g>
+
+<g transform="translate(24,0)">
+  <g transform="translate(-24,46)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" begin="0.90s" dur="0.55s" values="-24,46;0,46" fill="freeze"/>
+      <animate attributeName="opacity" begin="0.90s" dur="0.55s" values="0;1" fill="freeze"/>
+      <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-size="13" fill="#e6d3f5">Public Repos:</text>
+      <rect x="112" y="-10" width="210" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+      <rect x="112" y="-10" width="0" height="8" rx="4" fill="#ff7ad1"><animate attributeName="width" begin="1.10s" dur="0.8s" values="0;210.0" fill="freeze"/></rect>
+      <text x="336" y="0" font-family="Verdana, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffe9fb">9</text>
+    </g>
+<g transform="translate(-24,80)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" begin="1.12s" dur="0.55s" values="-24,80;0,80" fill="freeze"/>
+      <animate attributeName="opacity" begin="1.12s" dur="0.55s" values="0;1" fill="freeze"/>
+      <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-size="13" fill="#e6d3f5">Total Stars:</text>
+      <rect x="112" y="-10" width="210" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+      <rect x="112" y="-10" width="0" height="8" rx="4" fill="#ffbd2e"><animate attributeName="width" begin="1.32s" dur="0.8s" values="0;23.3" fill="freeze"/></rect>
+      <text x="336" y="0" font-family="Verdana, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffe9fb">1</text>
+    </g>
+<g transform="translate(-24,114)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" begin="1.34s" dur="0.55s" values="-24,114;0,114" fill="freeze"/>
+      <animate attributeName="opacity" begin="1.34s" dur="0.55s" values="0;1" fill="freeze"/>
+      <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-size="13" fill="#e6d3f5">Followers:</text>
+      <rect x="112" y="-10" width="210" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+      <rect x="112" y="-10" width="0" height="8" rx="4" fill="#7ad1ff"><animate attributeName="width" begin="1.54s" dur="0.8s" values="0;0.0" fill="freeze"/></rect>
+      <text x="336" y="0" font-family="Verdana, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffe9fb">0</text>
+    </g>
+<g transform="translate(-24,148)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" begin="1.56s" dur="0.55s" values="-24,148;0,148" fill="freeze"/>
+      <animate attributeName="opacity" begin="1.56s" dur="0.55s" values="0;1" fill="freeze"/>
+      <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-size="13" fill="#e6d3f5">Joined GitHub:</text>
+      
+      <text x="112" y="0" font-family="Verdana, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffe9fb">Mar 2025</text>
+    </g>
+</g>
+</svg>

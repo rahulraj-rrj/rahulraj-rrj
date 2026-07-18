@@ -1,0 +1,50 @@
+<svg viewBox="0 0 480 195" width="480" height="195" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="cardBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1c1030"/>
+    <stop offset="100%" stop-color="#2a1245"/>
+  </linearGradient>
+</defs>
+<rect x="0.5" y="0.5" width="479" height="194" rx="16" fill="url(#cardBg2)" stroke="#a45fe0" stroke-opacity="0.45"/>
+<text x="24" y="30" font-family="Verdana, Arial, sans-serif" font-size="16" font-weight="700" fill="#ff9de6">Most Used Languages</text>
+<g transform="translate(24,56)">
+      <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-size="12.5" fill="#e6d3f5">JavaScript</text>
+      <text x="316" y="0" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#ffe9fb" text-anchor="end">44.4%</text>
+      <rect x="0" y="6" width="300" height="7" rx="3.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="6" width="0" height="7" rx="3.5" fill="#f1e05a">
+        <animate attributeName="width" begin="0.50s" dur="0.9s" values="0;133.2" calcMode="spline" keySplines="0.2 0.6 0.3 1" fill="freeze"/>
+      </rect>
+    </g>
+<g transform="translate(24,82)">
+      <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-size="12.5" fill="#e6d3f5">Java</text>
+      <text x="316" y="0" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#ffe9fb" text-anchor="end">22.2%</text>
+      <rect x="0" y="6" width="300" height="7" rx="3.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="6" width="0" height="7" rx="3.5" fill="#b07219">
+        <animate attributeName="width" begin="0.68s" dur="0.9s" values="0;66.6" calcMode="spline" keySplines="0.2 0.6 0.3 1" fill="freeze"/>
+      </rect>
+    </g>
+<g transform="translate(24,108)">
+      <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-size="12.5" fill="#e6d3f5">CSS</text>
+      <text x="316" y="0" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#ffe9fb" text-anchor="end">11.1%</text>
+      <rect x="0" y="6" width="300" height="7" rx="3.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="6" width="0" height="7" rx="3.5" fill="#563d7c">
+        <animate attributeName="width" begin="0.86s" dur="0.9s" values="0;33.3" calcMode="spline" keySplines="0.2 0.6 0.3 1" fill="freeze"/>
+      </rect>
+    </g>
+<g transform="translate(24,134)">
+      <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-size="12.5" fill="#e6d3f5">HTML</text>
+      <text x="316" y="0" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#ffe9fb" text-anchor="end">11.1%</text>
+      <rect x="0" y="6" width="300" height="7" rx="3.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="6" width="0" height="7" rx="3.5" fill="#e34c26">
+        <animate attributeName="width" begin="1.04s" dur="0.9s" values="0;33.3" calcMode="spline" keySplines="0.2 0.6 0.3 1" fill="freeze"/>
+      </rect>
+    </g>
+<g transform="translate(24,160)">
+      <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-size="12.5" fill="#e6d3f5">TypeScript</text>
+      <text x="316" y="0" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#ffe9fb" text-anchor="end">11.1%</text>
+      <rect x="0" y="6" width="300" height="7" rx="3.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="6" width="0" height="7" rx="3.5" fill="#3178c6">
+        <animate attributeName="width" begin="1.22s" dur="0.9s" values="0;33.3" calcMode="spline" keySplines="0.2 0.6 0.3 1" fill="freeze"/>
+      </rect>
+    </g>
+</svg>
