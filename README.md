@@ -403,7 +403,7 @@ alt="Top Languages"/>
 
 
 <img
-  src="https://streak-stats.demolab.com?user=rahulraj-rrj](https://streak-stats.demolab.com/?user=rahulraj-rrj&theme=radical&hide_border=true&background=1c1030&ring=c24bff&fire=ff9de6&currStreakLabel=ffffff"
+  src="https://streak-stats.demolab.com/?user=rahulraj-rrj&theme=radical&hide_border=true&background=1c1030&ring=c24bff&fire=ff9de6&currStreakLabel=ffffff"
   alt="GitHub Streak"
 />
 
